@@ -79,6 +79,10 @@ Then go to **Admin Center → Apps and integrations → Apps → Zendesk Support
 - Zendesk permissions, quotas and Audit Logs retention apply.
 - This is a development base, not a certified Zendesk Marketplace product. Review the code and permissions with your teams and test in a sandbox before using it in production. You are responsible for your own Zendesk configuration and access controls.
 
+## License
+
+[MIT](./LICENSE)
+
 ## Contact
 
 Name: Jhoan Zabala  

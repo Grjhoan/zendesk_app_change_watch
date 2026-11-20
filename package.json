@@ -2,6 +2,7 @@
   "name": "Jhoan-Zabala-Zendesk-Admin",
   "version": "1.0.0",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "description": "Zendesk Change Watch — Private Zendesk Support nav_bar app for configuration audit visibility, personal alerts, and change clarifications.",
   "scripts": {
