@@ -1,0 +1,8 @@
+{
+  "app": {
+    "name": "Zendesk Change Watch",
+    "short_description": "Monitor Zendesk configuration changes, manage personal alerts, and request clarifications.",
+    "long_description": "Zendesk Change Watch provides visibility into instance configuration changes from Zendesk Audit Logs, personal deduplicated alert rules, and audit-linked clarification threads backed by Zendesk Custom Objects.",
+    "installation_instructions": "Install as a private Support nav bar app and configure role access in Admin Center."
+  }
+}

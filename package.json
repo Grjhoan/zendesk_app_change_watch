@@ -1,0 +1,45 @@
+{
+  "name": "Jhoan-Zabala-Zendesk-Admin",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Zendesk Change Watch — Private Zendesk Support nav_bar app for configuration audit visibility, personal alerts, and change clarifications.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build && node scripts/prepare-zaf-dist.mjs",
+    "test": "vitest run --pool=forks",
+    "test:watch": "vitest --pool=forks",
+    "setup:objects": "node scripts/setup-custom-objects.mjs",
+    "zcli:server": "zcli apps:server dist",
+    "zcli:validate": "zcli apps:validate dist",
+    "zcli:package": "zcli apps:package dist"
+  },
+  "dependencies": {
+    "@zendeskgarden/react-buttons": "^9.0.0",
+    "@zendeskgarden/react-forms": "^9.0.0",
+    "@zendeskgarden/react-grid": "^9.0.0",
+    "@zendeskgarden/react-loaders": "^9.0.0",
+    "@zendeskgarden/react-modals": "^9.0.0",
+    "@zendeskgarden/react-notifications": "^9.0.0",
+    "@zendeskgarden/react-tables": "^9.0.0",
+    "@zendeskgarden/react-tabs": "^9.0.0",
+    "@zendeskgarden/react-tags": "^9.0.0",
+    "@zendeskgarden/react-theming": "^9.0.0",
+    "@zendeskgarden/react-typography": "^9.0.0",
+    "@zendeskgarden/svg-icons": "^7.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "styled-components": "^6.1.13"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "jsdom": "^25.0.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}

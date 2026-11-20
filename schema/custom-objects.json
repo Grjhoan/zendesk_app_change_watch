@@ -1,0 +1,225 @@
+{
+  "schemaVersion": "1.0.0",
+  "objects": [
+    {
+      "key": "cw_alert_rule",
+      "title": "Change Watch Alert Rule",
+      "title_pluralized": "Change Watch Alert Rules",
+      "description": "Personal alert subscription rules for Zendesk Change Watch.",
+      "include_in_list_view": false,
+      "allows_attachments": false,
+      "fields": [
+        {
+          "key": "owner_user_id",
+          "title": "Owner User ID",
+          "type": "text",
+          "description": "Zendesk user ID of the rule owner."
+        },
+        {
+          "key": "module_key",
+          "title": "Module Key",
+          "type": "text",
+          "description": "Configuration module key matched by this rule."
+        },
+        {
+          "key": "action_key",
+          "title": "Action Key",
+          "type": "text",
+          "description": "Audit action key matched by this rule."
+        },
+        {
+          "key": "enabled",
+          "title": "Enabled",
+          "type": "checkbox",
+          "description": "Whether this alert rule is active."
+        },
+        {
+          "key": "rule_notes",
+          "title": "Notes",
+          "type": "textarea",
+          "description": "Optional note describing why this rule exists."
+        }
+      ]
+    },
+    {
+      "key": "cw_alert_read_state",
+      "title": "Change Watch Read State",
+      "title_pluralized": "Change Watch Read States",
+      "description": "Per-user read receipts deduplicated by Zendesk Audit Log event ID.",
+      "include_in_list_view": false,
+      "allows_attachments": false,
+      "fields": [
+        {
+          "key": "user_id",
+          "title": "User ID",
+          "type": "text",
+          "description": "Zendesk user ID who read the alert."
+        },
+        {
+          "key": "audit_event_id",
+          "title": "Audit Event ID",
+          "type": "text",
+          "description": "Zendesk Audit Log event ID."
+        },
+        {
+          "key": "read_at",
+          "title": "Read At",
+          "type": "text",
+          "description": "ISO-8601 timestamp when the alert was marked read."
+        }
+      ]
+    },
+    {
+      "key": "cw_clarification_thread",
+      "title": "Change Watch Clarification Thread",
+      "title_pluralized": "Change Watch Clarification Threads",
+      "description": "Clarification requests linked to Zendesk Audit Log event IDs.",
+      "include_in_list_view": false,
+      "allows_attachments": false,
+      "fields": [
+        {
+          "key": "audit_event_id",
+          "title": "Audit Event ID",
+          "type": "text",
+          "description": "Zendesk Audit Log event ID."
+        },
+        {
+          "key": "event_module",
+          "title": "Event Module",
+          "type": "text",
+          "description": "Classified configuration module key."
+        },
+        {
+          "key": "event_action",
+          "title": "Event Action",
+          "type": "text",
+          "description": "Audit action key."
+        },
+        {
+          "key": "event_source_label",
+          "title": "Event Source Label",
+          "type": "text",
+          "description": "Snapshot of the audited item label."
+        },
+        {
+          "key": "event_summary",
+          "title": "Event Summary",
+          "type": "textarea",
+          "description": "Snapshot of the audit change description."
+        },
+        {
+          "key": "event_created_at",
+          "title": "Event Created At",
+          "type": "text",
+          "description": "ISO-8601 timestamp of the audit event."
+        },
+        {
+          "key": "requester_user_id",
+          "title": "Requester User ID",
+          "type": "text",
+          "description": "Zendesk user ID of the person asking for clarification."
+        },
+        {
+          "key": "requester_name",
+          "title": "Requester Name",
+          "type": "text",
+          "description": "Display name of the requester."
+        },
+        {
+          "key": "recipient_user_id",
+          "title": "Recipient User ID",
+          "type": "text",
+          "description": "Zendesk user ID of the assigned recipient."
+        },
+        {
+          "key": "recipient_name",
+          "title": "Recipient Name",
+          "type": "text",
+          "description": "Display name of the recipient."
+        },
+        {
+          "key": "is_system_event",
+          "title": "System Event",
+          "type": "checkbox",
+          "description": "Whether the original audit event was initiated by System or an inaccessible actor."
+        },
+        {
+          "key": "question",
+          "title": "Question",
+          "type": "textarea",
+          "description": "Initial clarification question."
+        },
+        {
+          "key": "status",
+          "title": "Status",
+          "type": "text",
+          "description": "Thread status: open or resolved."
+        },
+        {
+          "key": "resolved_at",
+          "title": "Resolved At",
+          "type": "text",
+          "description": "ISO-8601 timestamp when resolved."
+        },
+        {
+          "key": "resolved_by_user_id",
+          "title": "Resolved By User ID",
+          "type": "text",
+          "description": "Zendesk user ID who resolved the thread."
+        },
+        {
+          "key": "last_activity_at",
+          "title": "Last Activity At",
+          "type": "text",
+          "description": "ISO-8601 timestamp of the latest update or reply."
+        }
+      ]
+    },
+    {
+      "key": "cw_clarification_reply",
+      "title": "Change Watch Clarification Reply",
+      "title_pluralized": "Change Watch Clarification Replies",
+      "description": "Replies posted inside Change Watch clarification threads.",
+      "include_in_list_view": false,
+      "allows_attachments": false,
+      "fields": [
+        {
+          "key": "thread_record_id",
+          "title": "Thread Record ID",
+          "type": "text",
+          "description": "Record ID of the parent cw_clarification_thread."
+        },
+        {
+          "key": "audit_event_id",
+          "title": "Audit Event ID",
+          "type": "text",
+          "description": "Zendesk Audit Log event ID."
+        },
+        {
+          "key": "author_user_id",
+          "title": "Author User ID",
+          "type": "text",
+          "description": "Zendesk user ID of the reply author."
+        },
+        {
+          "key": "author_name",
+          "title": "Author Name",
+          "type": "text",
+          "description": "Display name of the reply author."
+        },
+        {
+          "key": "body",
+          "title": "Reply Body",
+          "type": "textarea",
+          "description": "Reply text."
+        },
+        {
+          "key": "replied_at",
+          "title": "Replied At",
+          "type": "text",
+          "description": "ISO-8601 timestamp of the reply."
+        }
+      ]
+    }
+  ]
+}

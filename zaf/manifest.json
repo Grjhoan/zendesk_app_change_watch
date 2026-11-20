@@ -1,0 +1,17 @@
+{
+  "name": "Zendesk Change Watch",
+  "author": {
+    "name": "Zendesk Change Watch",
+    "email": "admin@example.com",
+    "url": "https://developer.zendesk.com"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": {
+    "support": {
+      "nav_bar": "assets/iframe.html"
+    }
+  },
+  "version": "1.0.0",
+  "frameworkVersion": "2.0"
+}

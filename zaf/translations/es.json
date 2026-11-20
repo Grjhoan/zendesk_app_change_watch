@@ -1,0 +1,8 @@
+{
+  "app": {
+    "name": "Zendesk Change Watch",
+    "short_description": "Supervisa cambios de configuración en Zendesk, gestiona alertas personales y solicita aclaraciones.",
+    "long_description": "Zendesk Change Watch ofrece visibilidad de los cambios de configuración de la instancia desde los registros de auditoría de Zendesk, reglas de alerta personales deduplicadas e hilos de aclaración vinculados a eventos mediante Custom Objects.",
+    "installation_instructions": "Instala la aplicación privada en la barra de navegación de Support y configura el acceso por roles en el Centro de administración."
+  }
+}
